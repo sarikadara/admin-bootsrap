@@ -44,16 +44,16 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10">
-       <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Dashboard <small>manage your site</small></h1>
+            <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Dashboard <small>manage your site</small></h1>
           </div>
-     <div class="col-md-2">
+          <div class="col-md-2">
             <div class="dropdown create">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 create content
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Add page</a></li>
+                <li><a type="button" data-toggle="model" data-target="#add page">Add page</a></li>
                 <li><a href="#">Add post</a></li>
                 <li><a href="#">Add user</a></li>
               </ul>
@@ -61,7 +61,6 @@
           </div>
         </div>
       </div>
-
     </header>
 
     <section id="breadcrumb">
@@ -82,13 +81,11 @@
               <a href="pages.html" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>pages<span class="badge">12</span></span></a>
               <a href="post.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>post</span>pages<span class="badge">33</span></a>
               <a href="users.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>users</span>pages<span class="badge">203</span></a>
-            
             </div>
-
-          <div class="well">
-            <h4>Disk Space Used</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <div class="well">
+              <h4>Disk Space Used</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                 60%
               </div>
             </div>
@@ -99,20 +96,20 @@
               </div>
             </div>
           </div>
-          </div>
-          <div class="col-md-9">
-            <!---website overview-->
-            <div class="panel panel-default">
-              <div class="panel-heading main-color-bg">
-                <h3 class="panel-title">Website overview</h3>
-              </div>
-              <div class="panel-body">
-                <div class="col-md-3">
-                  <div class="well dash-box">
-                    <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>203</h2>
-                    <h4>users</h4>
-                  </div>
+        </div>
+        <div class="col-md-9">
+          <!---website overview-->
+          <div class="panel panel-default">
+            <div class="panel-heading main-color-bg">
+              <h3 class="panel-title">Website overview</h3>    
+            </div>
+            <div class="panel-body">
+              <div class="col-md-3">
+                <div class="well dash-box">
+                  <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span>203</h2>
+                  <h4>users</h4>
                 </div>
+              </div>
                 <div class="col-md-3">
                   <div class="well dash-box">
                     <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>12</h2>
@@ -135,7 +132,7 @@
                 </div>
               </div>
 
-            </div>
+            
             <!---lates users-->
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -174,6 +171,53 @@
       </div>
     </section>
 
+
+    <!---models-->
+
+
+    <!---add page-->
+
+    <div class="modal fade" id="addpage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">add page</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>page title</label>
+              <input type="text" class="form-control" placeholder="page title">
+            </div>
+            <div class="form-group">
+              <label>pagr body</label>
+              <textarea name="editori" class="form-control" placeholder="page body"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> published
+              </label>
+            </div>
+            <div class="form-group">
+              <label>meta tags</label>
+              <input type="text" class="form-control" placeholder="add some tags--">
+            </div>
+            <div class="form-group">
+              <label>meta description</label>
+              <input type="text" class="form-control" placeholder="add meta description----">
+            </div>
+  
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
