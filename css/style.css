@@ -101,8 +101,18 @@ body{
   .dash-box{
       text-align:center;
   }
+  #login{
+    margin-top:30px;
+  }
 
-
+  /*footer*/
+  #footer{
+    background:#333333;
+    color:#ffffff;
+    text-align:center;
+    padding:30px;
+    margin-top:30px;
+  }
    
 
 
